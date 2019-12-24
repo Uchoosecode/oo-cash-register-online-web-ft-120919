@@ -43,8 +43,8 @@ class CashRegister
   end
   
   def void_last_transaction
-    @total -= (@final_total_price.pop)
-    if @items == []
+    until @total -= (@final_total_price.pop)
+     @items == []
       @final_total_price.to_f.clear
     end
   end
