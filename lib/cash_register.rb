@@ -28,7 +28,7 @@ class CashRegister
     end
     @price = price
     @total += @price * quantity #multiplies the price by the amount of items
-    @final_total_price << price
+    @final_total_price << @price
     @total
     end
       
